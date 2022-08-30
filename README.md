@@ -19,5 +19,7 @@ The code has been developed on a LINUX server and a bash script is provided for 
 module load R  
 R CMD BATCH --no-save run_all.R  
 #----------------------------------------------------  
+**Software requirments:**
 
 
+The main R script code is entitled 'run_all.R'. In this file,  
