@@ -1,0 +1,27 @@
+PLINK v1.90b6.24 64-bit (6 Jun 2021)
+Options in effect:
+  --bfile snps_hwe_001
+  --chr-set 30
+  --keep fam_last2gen.txt
+  --make-bed
+  --out last2gen_binary
+
+Hostname: gadi-cpu-clx-2571.gadi.nci.org.au
+Working directory: /scratch/eu82/mn7316/Grid_search/Simulated_data/test_1
+Start time: Wed Jan  5 18:31:24 2022
+
+Random number seed: 1641367884
+193098 MB RAM detected; reserving 96549 MB for main workspace.
+7661 variants loaded from .bim file.
+5550 samples (2550 males, 3000 females) loaded from .fam.
+--keep: 2000 samples remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 0 founders and 2000 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate in remaining samples is exactly 1.
+7661 variants and 2000 samples pass filters and QC.
+Note: No phenotypes present.
+--make-bed to last2gen_binary.bed + last2gen_binary.bim + last2gen_binary.fam
+... done.
+
+End time: Wed Jan  5 18:31:24 2022
