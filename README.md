@@ -19,7 +19,7 @@ The code has been developed on a LINUX server and a bash script is provided for 
 module load R  
 R CMD BATCH --no-save run_all.R  
 #----------------------------------------------------  
-**Software requirements:
+**Software requirements:**
 
 **MTG2** : https://sites.google.com/site/honglee0707/mtg2  
 **PLINK**: https://www.cog-genomics.org/plink/  
@@ -27,4 +27,7 @@ R CMD BATCH --no-save run_all.R
 
 #---------------------------------------------------  
 
-The main R script code is entitled 'run_all.R'. In this file,  
+**The main R script:**
+
+In this script entitled 'run_all.R', the main core of the grid search is developed to evaluate all feasible configurations of the HBLUP hyper-parameters. It is noted that if the resolution of the alpha parameter changes, the relevant rtmx_parameters script should be developed.   
+
