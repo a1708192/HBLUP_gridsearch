@@ -1,4 +1,21 @@
 # HBLUP_gridsearch
 The performance of HBLUP using various hyper-parameters such as blending, tuning and scale factor in simulated data.
 
-The H-matrix best linear unbiased prediction (HBLUP) method has been widely used in livestock breeding programs. It can integrate all information, including pedigree, genotypes, and phenotypes on both genotyped and non-genotyped individuals into one single evaluation that can provide reliable predictions of breeding values. The existing HBLUP method (e.g., that implemented in BLUPf90 software) requires hyper-parameters that should be adequately optimised as otherwise the genomic prediction accuracy may decrease. In this study, we assess the performance of HBLUP using various hyper-parameters such as blending, tuning and scale factor in simulated as well as real data on Hanwoo cattle. In both simulated and cattle data, we show that blending is not necessary, indicating that the prediction accuracy decreases when using a blending hyper-parameter < 1. The tuning process (adjusting genomic relationships accounting for base allele frequencies) improves prediction accuracy in the simulated data, confirming previous studies, although the improvement is not statistically significant in the Hanwoo cattle data. We also demonstrate that a scale factor, α, which determines the relationship between allele frequency and per-allele effect size, can improve the HBLUP accuracy in both simulated and real data. Our findings suggest that an optimal scale factor should be considered to increase the prediction accuracy, in addition to blending and tuning processes, when using HBLUP. 
+The H-matrix best linear unbiased prediction (HBLUP) method has been widely used in livestock breeding programs. The existing HBLUP method (e.g., that implemented in BLUPf90 software) requires hyper-parameters that should be adequately optimised as otherwise the genomic prediction accuracy may decrease. In this study, we assess the performance of HBLUP using various hyper-parameters such as blending, tuning and scale factor in simulated data.
+
+The code has been developed on a LINUX server and a bash script is provided for running the code on a server (test_sim_gadi.sh)
+
+#!/bin/bash
+ 
+#PBS -l ncpus=4
+#PBS -l mem=6GB
+#PBS -l jobfs=7GB
+#PBS -P eu82
+#PBS -l walltime=48:00:00
+#PBS -M Mehdi.Neshat@unisa.edu.au
+#PBS -l wd
+#PBS -m abe
+#PBS -q normal
+module load R
+R CMD BATCH --no-save run_all.R
+
